@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";; rel="stylesheet"> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>practice 2</title>
+</head>
+
+
+<body>
+
+<div class="container">
+    <h1>Who's team will win this tournament?</h1>
+    <input type="text" class="frm-control" id="intrams" placeholder="Yellow tigers, Green hornets, Red bulldogs, Blue bears" style="width: 500px;">
+    <br>
+    <button type="submit" class="btn btn-secondary" onclick="ruby()">Show me</button>
+
+    <h1 id="show_here"> Winning team is...</h1>
+</div>
+
+<script>
+    function ruby(){
+        var team = document.getElementById("intrams").value;
+    
+
+    if (team == 'Blue Bears'){
+        document.getElementById("show_here").innerHTML = "Blue Bears fight fight grr!";}
+
+    else if (team == 'Red Bulldogs'){
+        document.getElementById("show_here").innerHTML = "R.E.D pula laban laban lang!";}
+
+         else if (team == 'Yellow Tigers'){
+        document.getElementById("show_here").innerHTML = "Go Yellow Tigers!";}
+
+         else if (team == 'Green Hornets'){
+        document.getElementById("show_here").innerHTML = "Go Green Hornets!";}
+
+        else{document.getElementById("show_here").innerHTML = "Go for the win!";}
+    }    
+</script>
+    
+</body>
+</html>
